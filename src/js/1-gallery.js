@@ -64,6 +64,11 @@ const images = [
   },
 ];
 
+// Описаний в документації
+import SimpleLightbox from 'simplelightbox';
+// Додатковий імпорт стилів
+import 'simplelightbox/dist/simple-lightbox.css';
+
 const gallery = document.querySelector('.gallery');
 console.log(gallery);
 const galleryContent = images
@@ -73,22 +78,18 @@ const galleryContent = images
     <img
       class="gallery-image"
       src="${img.preview}"
-      data-source="${img.original}"
+      // data-source="${img.original}"
       alt="${img.description}"
     />
   </a>
 </li>`
   )
   .join('');
+console.log(galleryContent);
 gallery.insertAdjacentHTML('beforeend', galleryContent);
 
-// gallery.addEventListener('click', event => {
-//   event.preventDefault();
-//   if (
-//     event.target.tagName == 'IMG' &&
-//     event.target.classList.contains('gallery-image')
-//   ) {
-//     const originalImage = event.target.getAttribute('data-source');
-//     basicLightbox.create(`<img src ='${originalImage}'>`).show();
-//   }
-// });
+let lightbox = new SimpleLightbox('.gallery a', {
+  overlayOpacity: 0.8,
+  captionsData: 'alt',
+  captionDelay: 250,
+});
