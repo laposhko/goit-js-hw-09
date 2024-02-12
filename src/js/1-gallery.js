@@ -64,13 +64,10 @@ const images = [
   },
 ];
 
-// Описаний в документації
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.css';
 
 const gallery = document.querySelector('.gallery');
-console.log(gallery);
 const galleryContent = images
   .map(
     img => `<li class="gallery-item">
@@ -85,7 +82,6 @@ const galleryContent = images
 </li>`
   )
   .join('');
-console.log(galleryContent);
 gallery.insertAdjacentHTML('beforeend', galleryContent);
 
 let lightbox = new SimpleLightbox('.gallery a', {
