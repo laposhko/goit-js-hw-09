@@ -4,6 +4,7 @@ img {
   margin-right: 0;
 }
 .gallery {
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
