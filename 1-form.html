@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     
-    <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers2.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/styles-f789c8ff.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/vendor-da53b1cb.js">
     <link rel="stylesheet" href="/goit-js-hw-09/assets/styles-1d121817.css">
-    <link rel="stylesheet" href="/goit-js-hw-09/assets/vendor-9f28be61.css">
   </head>
   <body>
     <section>
       <a href="/">Go home</a>
-      <ul class="gallery"></ul>
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </section>
     
   </body>
