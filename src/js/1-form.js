@@ -16,10 +16,7 @@ function handleFormInput(event) {
 function handleFormSubmission(event) {
   event.preventDefault();
   const submittedDetails = getFeedbackDetails(event);
-  if (
-    submittedDetails.email.trim() == '' ||
-    submittedDetails.message.trim() == ''
-  ) {
+  if (submittedDetails.email == '' || submittedDetails.message == '') {
     alert('All fields should be filled');
   } else {
     console.log(getFeedbackDetails(event));
