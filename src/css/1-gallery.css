@@ -1,6 +1,11 @@
-.gallery-item {
+img {
+  width: 360px;
+  height: 200px;
+  margin-right: 0;
 }
-.gallery-link {
-}
-.gallery-image {
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
 }

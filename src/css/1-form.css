@@ -1,0 +1,42 @@
+.feedback-form {
+  padding: 10px;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+form textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  padding-left: 10px;
+}
+form button {
+  color: white;
+  border: none;
+
+  font-size: 100%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  margin-top: 10px;
+}

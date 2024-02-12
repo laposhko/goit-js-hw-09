@@ -6,20 +6,6 @@
 */
 @import url('./reset.css');
 @import url('./1-gallery.css');
+@import url('./1-form.css');
 /* @import SimpleLightbox from 'simplelightbox';
 @import 'simplelightbox/dist/simple-lightbox.min.css'; */
-
-img {
-  width: 360px;
-  height: 200px;
-  margin-right: 0;
-}
-.gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.gallery li {
-  /* flex-basis: calc(100% / 3 - 10px); */
-}
